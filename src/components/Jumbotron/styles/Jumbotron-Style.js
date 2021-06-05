@@ -6,26 +6,38 @@ export const Jumbocontainer = styled.div`
   background: #333333;
   color: #ffff;
   display: grid;
-  // grid-template-column: 1fr 1fr 1fr;
   grid-row-gap: 0.3rem;
-
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 800px) {
     grid-template-column: 200px 1fr 1fr;
-    grid-row-gap: 0.5rem;
+    grid-row-gap: 0.3rem;
+  }
+`;
+
+export const Wrapjumbo = styled.div`
+  width: 100%;
+  height: 340px;
+  background: #000;
+
+  @media only screen and (min-width: 800px) {
+    height: 280px;
   }
 `;
 
 export const Jumbosection = styled.div`
   width: 100%;
-  height: 340px;
-  background: #000;
+
   color: #ffff;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 
-  @media only screen and (min-width: 1000px) {
-    display: flex;
+  @media only screen and (min-width: 800px) {
+    width: 80%;
+    // background: yellow;
+    margin: 0 auto;
+    height: 200px;
+    flex-direction: ${(prop) => (prop.rowDirection ? "row" : "row-reverse")};
+    height: 250px;
   }
 `;
 
@@ -33,7 +45,6 @@ export const Jumbotextsection = styled.div`
   width: 90%;
   margin: 0 auto;
   height: auto;
-  // background: red;
   text-align: center;
   margin-top: 2rem;
 
@@ -45,21 +56,22 @@ export const Jumbotextsection = styled.div`
     margin-top: 0.5rem;
   }
 
-  @media only screen and (min-width: 1000px) {
-    margin-left: 10rem;
-    margin-top: 100px;
-    margin-right: 5rem;
+  @media only screen and (min-width: 800px) {
+    height: auto;
+    text-align: left;
+    padding-top: 2rem;
+
+    padding-left: 2rem;
+    // background: red;
     h1 {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       font-weight: 550;
-      color: red;
     }
     p {
-      font-size: 1.5rem;
-      font-weigth: 10;
+      font-size: 1rem;
       margin-top: 1rem;
       text-align: left;
-      width: 500px;
+      width: 350px;
     }
   }
 `;
@@ -67,17 +79,22 @@ export const Jumbotextsection = styled.div`
 export const Jumboimagesection = styled.div`
   width: 100%;
   height: auto;
-  // background: green;
   display: grid;
-
   place-items: center;
 
   img {
     width: 65%;
     height: 180px;
   }
+  @media only screen and (min-width: 800px) {
+    width: 100%;
 
-  // height: 200px;
-  // margin-top: 100px;
-  // background: green;
+    // background: green;
+    img {
+      width: 290px;
+      height: 200px;
+    }
+  }
 `;
+
+// style={jumboValue.id === 2 ? { width: "150px" } : {}}
