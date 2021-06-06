@@ -4,9 +4,16 @@ import {
   Jumbosection,
   Jumbotextsection,
   Jumboimagesection,
+  Jumbonotify,
   Wrapjumbo,
+  Jumbonotifycontent,
+  Imageboxshot,
+  Textboxshot,
+  Textarea,
+  Iconarea,
 } from "./styles/Jumbotron-Style";
 import Jumbo from "../../fixtures/jumbo.json";
+import GetAppIcon from "@material-ui/icons/GetApp";
 const Jumbotron = () => {
   return (
     <Jumbocontainer>
@@ -26,6 +33,27 @@ const Jumbotron = () => {
                   key={jumboValue.id}
                   style={jumboValue.id === 2 ? { width: "150px" } : {}}
                 />
+                {jumboValue.id === 2 ? (
+                  <Jumbonotify>
+                    <Jumbonotifycontent>
+                      <Imageboxshot>
+                        <img
+                          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                          alt="notify"
+                        />
+                      </Imageboxshot>
+                      <Textboxshot>
+                        <Textarea>
+                          <h3>Stranger Things</h3>
+                          <p>Downloading...</p>
+                        </Textarea>
+                        <Iconarea>
+                          <GetAppIcon />
+                        </Iconarea>
+                      </Textboxshot>
+                    </Jumbonotifycontent>
+                  </Jumbonotify>
+                ) : null}
               </Jumboimagesection>
             </Jumbosection>
           </Wrapjumbo>
