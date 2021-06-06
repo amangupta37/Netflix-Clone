@@ -31,7 +31,7 @@ const Jumbotron = () => {
                   src={jumboValue.image}
                   alt={jumboValue.alt}
                   key={jumboValue.id}
-                  style={jumboValue.id === 2 ? { width: "150px" } : {}}
+                  style={jumboValue.id === 2 ? { width: "140px" } : {}}
                 />
                 {jumboValue.id === 2 ? (
                   <Jumbonotify>
