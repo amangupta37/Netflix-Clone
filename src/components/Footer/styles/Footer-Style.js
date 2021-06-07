@@ -80,7 +80,7 @@ export const FooterChooseLanguageSection = styled.div`
     height: 60px;
     background: #000;
     color: rgb(117, 117, 117);
-    padding: 0.6rem;
+    padding: 0.3rem;
     font-size: 18px;
     font-weight: 600;
     border-radius: 0.2rem;

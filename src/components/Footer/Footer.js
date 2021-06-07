@@ -10,9 +10,6 @@ import footercontent from "../../fixtures/footer.json";
 const Footer = () => {
   return (
     <Footercontainer>
-      {footercontent.map((val) => {
-        return console.log(val);
-      })}
       <FooterQnASection>
         <p>Questions? Call 000-800-040-1843</p>
       </FooterQnASection>
