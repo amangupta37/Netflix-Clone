@@ -7,6 +7,7 @@ import {
   EffectContainer,
 } from "./styles/Header-Style";
 import Navigation from "../Navigation/Navigation";
+import Mailform from "../MailForm/Mailform";
 
 const Header = () => {
   return (
@@ -14,8 +15,13 @@ const Header = () => {
       <HeaderContainer>
         <EffectContainer></EffectContainer>
         <Navigation />
-        <TitleContainer></TitleContainer>
-        <MailFormContainer></MailFormContainer>
+        <TitleContainer>
+          <span>Unlimited movies, TV shows and more.</span>
+          <p>Watch anywhere. Cancel anytime.</p>
+        </TitleContainer>
+        <MailFormContainer>
+          <Mailform />
+        </MailFormContainer>
       </HeaderContainer>
     </Container>
   );
