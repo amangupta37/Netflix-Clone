@@ -8,8 +8,6 @@ export const Container = styled.div`
 
 export const HeaderContainer = styled.div`
   width: 100%;
-
-  width: 100%;
   height: 486px;
   top: 0;
   bottom: 0;
