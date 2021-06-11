@@ -21,7 +21,8 @@ const Signupform = () => {
 
             <button type="submit">Sign In</button>
 
-            <p>New to Netflix ? <span>Sign up now</span></p>
+            <p>New to Netflix? <span>Sign up now</span></p>
+            <h5>This page is protected by Google reCAPTCHA to ensure you're not a bot.<span> Learn more.</span></h5>
           </form>
         </FormContainer>
        
