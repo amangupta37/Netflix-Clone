@@ -5,12 +5,12 @@ import Faqs from "../components/Faqs/Faqs";
 import Header from "../components/Header/Header";
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <Header />
       <Jumbotron />
       <Faqs />
       <Footer />
-    </div>
+    </>
   );
 };
 
