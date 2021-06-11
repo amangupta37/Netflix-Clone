@@ -7,12 +7,16 @@ import {
 } from "./styles/Theme-Style";
 import { Netflixlogo } from "../Header/Logo/Netflixlogo";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
+
 const Theme = () => {
   return (
     <Container>
       <LogoContainer>
         <PlaceLogo>
-          <Netflixlogo />
+          <Link to="/">
+            <Netflixlogo />
+          </Link>
         </PlaceLogo>
       </LogoContainer>
       <FooterContainer>

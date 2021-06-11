@@ -52,6 +52,7 @@ export const FormContainer = styled.div`
     margin-top: 4rem;
     font-size: 1.2rem;
   }
+
   span {
     font-size: 1rem;
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, FormContainer } from "./Styles/Signin-Style";
 import Theme from "../Theme/Theme";
+import { Link } from "react-router-dom";
 
 const Signinform = () => {
   return (
@@ -27,7 +28,10 @@ const Signinform = () => {
             <button type="submit">Sign In</button>
 
             <p>
-              New to Netflix? <span>Sign up now</span>
+              New to Netflix?
+              <Link to="/signup" style={{ textDecoration: "none" }}>
+                <span> Sign up now</span>
+              </Link>
             </p>
             <h5>
               This page is protected by Google reCAPTCHA to ensure you're not a

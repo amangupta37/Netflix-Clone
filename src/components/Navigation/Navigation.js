@@ -7,12 +7,15 @@ import {
   SideContainer,
 } from "./styles/Navigation-Style.js";
 import { Netflixlogo } from "../Header/Logo/Netflixlogo";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <NavigationContainer>
       <IconContainer>
-        <Netflixlogo />
+        <Link to="/">
+          <Netflixlogo />
+        </Link>
       </IconContainer>
       <SideContainer>
         <LanguageContainer>
@@ -22,7 +25,9 @@ const Navigation = () => {
           </select>
         </LanguageContainer>
         <SignupContainer>
-          <button>Sign In</button>
+          <Link to="/signin">
+            <button>Sign In</button>
+          </Link>
         </SignupContainer>
       </SideContainer>
     </NavigationContainer>
