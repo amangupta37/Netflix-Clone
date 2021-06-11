@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 200px;
   // background: red;
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   left: 0;
   right: 0;
   bottom: 0;
@@ -24,14 +24,8 @@ export const Container = styled.div`
 export const FormContainer = styled.div`
   width: 100%;
   height: auto;
-  // background: yellow;
   margin-top: 1rem;
-
-  // display: grid;
-  // grid-template-rows: 50px 50px 60px;
-
-  display: flex;
-  flex-direction: coloumn;
+  margin-bottom:2rem;
   input {
     width: 100%;
     height: 50px;
@@ -58,12 +52,20 @@ export const FormContainer = styled.div`
   }
 
   p{
-    margin-top:2rem;
+    margin-top:4rem;
     font-size:1.2rem;
   }
   span{
     font-size:1rem;
   }
+  h5{
+    margin-top:1rem;
+    span{
+      font-size:0.7rem;
+     color:#0071eb;
+    }
+  }
+ 
 `;
 
 export const rectConatiner = styled.div`
