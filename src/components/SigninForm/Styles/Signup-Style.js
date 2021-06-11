@@ -17,11 +17,14 @@ export const Container = styled.div`
     font-size: 2rem;
     font-weight: 700;
   }
+
 `;
+
+
 export const FormContainer = styled.div`
   width: 100%;
   height: auto;
-  background: yellow;
+  // background: yellow;
   margin-top: 1rem;
 
   // display: grid;
@@ -32,10 +35,38 @@ export const FormContainer = styled.div`
   input {
     width: 100%;
     height: 50px;
+    margin-top:1rem;
+    padding-left:1rem;
+    background:#333;
+    border:none;
+    outline:none;
+    border-radius:0.2rem;
+    color:#fff;
+  }
+
+  button{
+    width: 100%;
+    height: 50px;
+    background:red;
+    margin-top:2rem;
+    border:none;
+    outline:none;
+    border-radius:0.2rem;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:600;
+  }
+
+  p{
+    margin-top:2rem;
+    font-size:1.2rem;
+  }
+  span{
+    font-size:1rem;
   }
 `;
-export const btnConatiner = styled.div`
-  width: 100%;
 
-  background: red;
+export const rectConatiner = styled.div`
+  width: 200px;
+  height: 200px;
 `;
