@@ -13,7 +13,7 @@ import {
   Iconarea,
 } from "./styles/Jumbotron-Style";
 import Jumbo from "../../fixtures/jumbo.json";
-import GetAppIcon from "@material-ui/icons/GetApp";
+import downloadIcon from "./styles/Icon/download-icon.gif";
 const Jumbotron = () => {
   return (
     <Jumbocontainer>
@@ -48,7 +48,7 @@ const Jumbotron = () => {
                           <p>Downloading...</p>
                         </Textarea>
                         <Iconarea>
-                          <GetAppIcon />
+                          <img src={downloadIcon} alt="download" />
                         </Iconarea>
                       </Textboxshot>
                     </Jumbonotifycontent>

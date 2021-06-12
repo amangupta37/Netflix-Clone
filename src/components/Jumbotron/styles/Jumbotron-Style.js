@@ -103,7 +103,7 @@ export const Jumbonotify = styled.div`
   width: 250px;
   height: 70px;
   background: #000;
-  margin-bottom: 20rem;
+  // margin-bottom: 20rem;
   position: relative;
   bottom: 3.5rem;
   border: 2px solid rgba(255, 255, 255, 0.25);
@@ -114,7 +114,9 @@ export const Jumbonotify = styled.div`
     height: 58px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 0.45em;
-    bottom: 2rem;
+    bottom: 4.5rem;
+    background: #000;
+    opacity: 0.99;
   }
 `;
 
@@ -145,31 +147,30 @@ export const Textboxshot = styled.div`
   width: 100%;
   // background: red;
   display: flex;
-  gap: 1.8rem;
+  gap: 1rem;
   @media only screen and (min-width: 800px) {
-    gap: 1.9rem;
   }
 `;
 
 export const Textarea = styled.div`
+  width: 100%;
   margin-top: 0.5rem;
 
   h3 {
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 550;
     color: rgb(255, 255, 255);
   }
 
   p {
-    font-size: 14.4px;
-    font-weight: 400;
+    font-size: 14px;
     color: rgb(0, 113, 235);
     margin-top: 0.2rem;
   }
 
   @media only screen and (min-width: 800px) {
     h3 {
-      font-size: 10px;
+      font-size: 0.6rem;
     }
 
     p {
@@ -179,10 +180,19 @@ export const Textarea = styled.div`
 `;
 
 export const Iconarea = styled.div`
-  padding-top: 0.8rem;
-  @media only screen and (min-width: 800px) {
-    padding-top: 0.6rem;
+  width: 40%;
+  // background: red;
 
-    transform: scale(0.8);
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding-top: 0.4rem;
+    img {
+      width: 80%;
+      height: 80%;
+    }
   }
 `;
