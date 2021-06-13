@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "plan": "Netflix Standard",
+    "screen": "1080p"
+  },
+  {
+    "id": 2,
+    "plan": "Netflix Basic",
+    "screen": "480p"
+  },
+  {
+    "id": 3,
+    "plan": "Netflix Premium",
+    "screen": "4K+HDR"
+  }
+]
