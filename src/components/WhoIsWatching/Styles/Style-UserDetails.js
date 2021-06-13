@@ -43,3 +43,22 @@ export const PlansContainer = styled.div`
     border-bottom: 2px solid #333;
   }
 `;
+
+export const SignoutContainer = styled.div`
+  width: 100%;
+  height: 50px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  button {
+    width: 100%;
+    height: 100%;
+    background: red;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.2rem;
+  }
+`;

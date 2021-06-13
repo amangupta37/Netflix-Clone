@@ -4,9 +4,12 @@ import {
   UserContainer,
   UserImageContainer,
   PlansContainer,
+  SignoutContainer,
 } from "./Styles/Style-UserDetails";
 
 import UserProfile from "./Styles/UserProfile/user.png";
+import Plan from "../Plans/Plan";
+
 const Userdetails = () => {
   return (
     <Container>
@@ -20,6 +23,10 @@ const Userdetails = () => {
       </UserContainer>
       <PlansContainer>
         <h1>Plans</h1>
+        <Plan />
+        <SignoutContainer>
+          <button>Sign out</button>
+        </SignoutContainer>
       </PlansContainer>
     </Container>
   );
