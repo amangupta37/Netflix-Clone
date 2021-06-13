@@ -49,7 +49,7 @@ export const FormContainer = styled.div`
   }
 
   p {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.2rem;
   }
 
@@ -65,10 +65,26 @@ export const FormContainer = styled.div`
     }
   }
 `;
+export const HelpContainer = styled.div`
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+`;
+export const CheckboxContainer = styled.div`
+  width: 65%;
+  display: flex;
+  gap: 0.2rem;
+  p {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+  }
+`;
+export const helpboxContainer = styled.div`
+  width: 100%;
+`;
 
 export const GoogleContainer = styled.div`
-  width: 100%;
-  padding-top: 1rem;
+  width: 90%;
 `;
 export const IconContainer = styled.div`
   width: 100%;
@@ -78,10 +94,10 @@ export const IconContainer = styled.div`
   cursor: pointer;
 
   img {
-    width: 15%;
+    width: 18%;
   }
   span {
-    padding-top: 1rem;
+    padding-top: 0.9rem;
     color: #333;
     font-size: 1rem;
   }

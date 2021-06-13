@@ -4,10 +4,14 @@ import {
   FormContainer,
   GoogleContainer,
   IconContainer,
+  HelpContainer,
+  CheckboxContainer,
+  helpboxContainer,
 } from "./Styles/Signin-Style";
 import Theme from "../Theme/Theme";
 import { Link } from "react-router-dom";
 import gIcon from "./Styles/Icon/google.ico";
+import CheckBoxIcon from "@material-ui/icons/CheckBox";
 const Signinform = () => {
   return (
     <>
@@ -31,24 +35,28 @@ const Signinform = () => {
             />
 
             <button type="submit">Sign In</button>
-            <GoogleContainer>
-              <IconContainer>
-                <img src={gIcon} alt="google signin" />
-                <span>Login with Google</span>
-              </IconContainer>
-            </GoogleContainer>
+            <HelpContainer>
+              <CheckboxContainer>
+                <CheckBoxIcon />
+                <p>Remember me</p>
+              </CheckboxContainer>
+              <helpboxContainer>Need Help ?</helpboxContainer>
+            </HelpContainer>
+
             <p>
               New to Netflix?
               <Link to="/signup" style={{ textDecoration: "none" }}>
                 <span> Sign up now</span>
               </Link>
             </p>
-            <h5>
-              This page is protected by Google reCAPTCHA to ensure you're not a
-              bot.<span> Learn more.</span>
-            </h5>
           </form>
         </FormContainer>
+        <GoogleContainer>
+          <IconContainer>
+            <img src={gIcon} alt="google signin" />
+            <span>Login with Google</span>
+          </IconContainer>
+        </GoogleContainer>
       </Container>
     </>
   );
