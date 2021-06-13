@@ -49,7 +49,7 @@ export const FormContainer = styled.div`
   }
 
   p {
-    margin-top: 4rem;
+    margin-top: 1rem;
     font-size: 1.2rem;
   }
 
@@ -63,5 +63,29 @@ export const FormContainer = styled.div`
       font-size: 0.8rem;
       color: #0071eb;
     }
+  }
+`;
+
+export const GoogleContainer = styled.div`
+  width: 100%;
+  padding-top: 1rem;
+`;
+export const IconContainer = styled.div`
+  width: 100%;
+
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  img {
+    width: 15%;
+  }
+  span {
+    padding-top: 1rem;
+    color: #333;
+    font-size: 1rem;
+  }
+  span:hover {
+    text-decoration: underline;
   }
 `;

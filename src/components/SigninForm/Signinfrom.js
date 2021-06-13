@@ -1,8 +1,13 @@
 import React from "react";
-import { Container, FormContainer } from "./Styles/Signin-Style";
+import {
+  Container,
+  FormContainer,
+  GoogleContainer,
+  IconContainer,
+} from "./Styles/Signin-Style";
 import Theme from "../Theme/Theme";
 import { Link } from "react-router-dom";
-
+import gIcon from "./Styles/Icon/google.ico";
 const Signinform = () => {
   return (
     <>
@@ -26,7 +31,12 @@ const Signinform = () => {
             />
 
             <button type="submit">Sign In</button>
-
+            <GoogleContainer>
+              <IconContainer>
+                <img src={gIcon} alt="google signin" />
+                <span>Login with Google</span>
+              </IconContainer>
+            </GoogleContainer>
             <p>
               New to Netflix?
               <Link to="/signup" style={{ textDecoration: "none" }}>
