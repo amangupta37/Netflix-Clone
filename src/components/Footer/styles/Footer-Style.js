@@ -11,7 +11,7 @@ export const FooterQnASection = styled.div`
   margin-top: 2rem;
 
   p {
-    width: 220px;
+    width: 100%;
     text-align: left;
     color: rgb(117, 117, 117);
     font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,7 +25,7 @@ export const FooterQnASection = styled.div`
 
     p {
       font-size: 8px;
-      width: 220px;
+      width: 100%;
     }
   }
 `;
@@ -38,7 +38,7 @@ export const FooterInfoSection = styled.div`
   display: grid;
   grid-template-columns: 130px 120px;
   text-align: left;
-  grid-gap: 1rem;
+  grid-gap: 1.2rem;
 
   p {
     font-size: 13px;
