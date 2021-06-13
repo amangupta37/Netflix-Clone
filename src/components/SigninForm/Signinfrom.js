@@ -52,10 +52,12 @@ const Signinform = () => {
           </form>
         </FormContainer>
         <GoogleContainer>
-          <IconContainer>
-            <img src={gIcon} alt="google signin" />
-            <span>Login with Google</span>
-          </IconContainer>
+          <Link to="/userprofile" style={{ textDecoration: "none" }}>
+            <IconContainer>
+              <img src={gIcon} alt="google signin" />
+              <span>Login with Google</span>
+            </IconContainer>
+          </Link>
         </GoogleContainer>
       </Container>
     </>
