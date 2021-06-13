@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Home, Browse, Signin, Signup } from "./pages";
+import { Home, Browse, Signin, Signup, Userprofile } from "./pages";
 const App = () => {
   return (
     <Router>
@@ -15,6 +15,9 @@ const App = () => {
       </Route>
       <Route path="/signin">
         <Signin />
+      </Route>
+      <Route path="/userprofile">
+        <Userprofile />
       </Route>
     </Router>
   );
