@@ -10,14 +10,15 @@ const App = () => {
       <Route path="/browse">
         <Browse />
       </Route>
+
+      <Route path="/userprofile">
+        <Userprofile />
+      </Route>
       <Route path="/signup">
         <Signup />
       </Route>
       <Route path="/signin">
         <Signin />
-      </Route>
-      <Route path="/userprofile">
-        <Userprofile />
       </Route>
     </Router>
   );

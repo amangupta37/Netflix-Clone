@@ -7,17 +7,27 @@ import {
   SignoutContainer,
 } from "./Styles/Style-UserDetails";
 
-import UserProfile from "./Styles/UserProfile/user.png";
+// import UserProfile from "./Styles/UserProfile/user.png";
 import Plan from "../Plans/Plan";
+import { auth } from "../../lib/firebase.prod";
 
-const Userdetails = () => {
+const Userdetails = (props) => {
+  const userLogout = () => {
+    auth.signOut().then(() => {
+      props.logout(false);
+      localStorage.clear();
+    });
+  };
+
+  const userInfo = JSON.parse(localStorage.getItem("googleData"));
+
   return (
     <Container>
       <UserContainer>
         <UserImageContainer>
-          <img src={UserProfile} alt="userprofile" />
+          <img src={userInfo.image} alt="userprofile" />
           <span>
-            <p>Aman Gupta</p>
+            <p>{userInfo.name}</p>
           </span>
         </UserImageContainer>
       </UserContainer>
@@ -25,7 +35,7 @@ const Userdetails = () => {
         <h1>Plans</h1>
         <Plan />
         <SignoutContainer>
-          <button>Sign out</button>
+          <button onClick={userLogout}>Sign out</button>
         </SignoutContainer>
       </PlansContainer>
     </Container>

@@ -8,17 +8,21 @@ import {
 
 import { Netflixlogo } from "../Header/Logo/Netflixlogo";
 import Userdetails from "../WhoIsWatching/Userdetails";
-const User = () => {
+import { Link } from "react-router-dom";
+
+const User = (props) => {
   return (
     <Container>
       <HeaderContainer>
         <HeaderLogoContainer>
-          <Netflixlogo />
+          <Link to="/">
+            <Netflixlogo />
+          </Link>
         </HeaderLogoContainer>
       </HeaderContainer>
       <UserInfoContainer>
         <h1>Who's Watching ?</h1>
-        <Userdetails />
+        <Userdetails logout={props.isSignin} />
       </UserInfoContainer>
     </Container>
   );

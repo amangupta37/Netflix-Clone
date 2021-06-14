@@ -1,9 +1,9 @@
 import React from "react";
 import User from "../components/UserProfile/User";
-const Userprofile = () => {
+const Userprofile = (props) => {
   return (
     <div>
-      <User />
+      <User isSignin={props.isSignin} />
     </div>
   );
 };
