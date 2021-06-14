@@ -2,17 +2,15 @@ import React from "react";
 import {
   Container,
   FormContainer,
-  GoogleContainer,
-  IconContainer,
   HelpContainer,
   CheckboxContainer,
   helpboxContainer,
 } from "./Styles/Signin-Style";
 import Theme from "../Theme/Theme";
 import { Link } from "react-router-dom";
-import gIcon from "./Styles/Icon/google.ico";
 import CheckBoxIcon from "@material-ui/icons/CheckBox";
-const Signinform = () => {
+import Googlelogin from "../GoogleLogin/Googlelogin";
+const Signinform = (props) => {
   return (
     <>
       <Theme />
@@ -51,14 +49,8 @@ const Signinform = () => {
             </p>
           </form>
         </FormContainer>
-        <GoogleContainer>
-          <Link to="/userprofile" style={{ textDecoration: "none" }}>
-            <IconContainer>
-              <img src={gIcon} alt="google signin" />
-              <span>Login with Google</span>
-            </IconContainer>
-          </Link>
-        </GoogleContainer>
+
+        <Googlelogin userLogin={props.isSignin} />
       </Container>
     </>
   );
