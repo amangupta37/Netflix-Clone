@@ -1,7 +1,10 @@
+import React from "react";
+import Navbar from "../components/Navbar/Navbar";
+
 const Browse = () => {
   return (
     <div>
-      <h1>this is Brwose page </h1>
+      <Navbar />
     </div>
   );
 };
