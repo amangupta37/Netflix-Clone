@@ -27,7 +27,7 @@ export const PlanNameConatiner = styled.div`
   }
   p {
     margin-top: 0.2rem;
-    color: #fff;
+    color: #ffff;
     text-align: left;
   }
 `;

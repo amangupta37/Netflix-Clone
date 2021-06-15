@@ -10,6 +10,7 @@ import {
 // import UserProfile from "./Styles/UserProfile/user.png";
 import Plan from "../Plans/Plan";
 import { auth } from "../../lib/firebase.prod";
+import { Link } from "react-router-dom";
 
 const Userdetails = (props) => {
   const userLogout = () => {
@@ -25,7 +26,9 @@ const Userdetails = (props) => {
     <Container>
       <UserContainer>
         <UserImageContainer>
-          <img src={userInfo.image} alt="userprofile" />
+          <Link to="/browse">
+            <img src={userInfo.image} alt="userprofile" />
+          </Link>
           <span>
             <p>{userInfo.name}</p>
           </span>

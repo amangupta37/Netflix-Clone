@@ -51,6 +51,7 @@ export const FormContainer = styled.div`
   p {
     margin-top: 2rem;
     font-size: 1.2rem;
+
     color: rgb(179, 179, 179);
   }
 
