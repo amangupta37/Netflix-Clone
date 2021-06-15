@@ -1,6 +1,10 @@
 import React from "react";
 import Theme from "../Theme/Theme";
-import { Container, FormContainer } from "./Styles/Signupform-Style";
+import {
+  Container,
+  FormContainer,
+  recaptchaContainer,
+} from "./Styles/Signupform-Style";
 import { Link } from "react-router-dom";
 
 const Signupform = () => {
@@ -37,15 +41,18 @@ const Signupform = () => {
             <button type="submit">Sign Up</button>
 
             <p>
-              Already a user?
+              Already a user ?
               <Link to="/signin" style={{ textDecoration: "none" }}>
                 <span> Sign In</span>
               </Link>
             </p>
-            <h5>
-              This page is protected by Google reCAPTCHA to ensure you're not a
-              bot.<span> Learn more.</span>
-            </h5>
+
+            <recaptchaContainer>
+              <h6>
+                This page is protected by Google reCAPTCHA to ensure you're not
+                a bot.<span> Learn more.</span>
+              </h6>
+            </recaptchaContainer>
           </form>
         </FormContainer>
       </Container>

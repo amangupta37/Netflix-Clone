@@ -15,7 +15,7 @@ export const IconContainer = styled.div`
   }
   span {
     padding-top: 0.9rem;
-    color: #333;
+    color: rgb(179, 179, 179);
     font-size: 1rem;
   }
   span:hover {

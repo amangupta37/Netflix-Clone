@@ -51,6 +51,7 @@ export const FormContainer = styled.div`
   p {
     margin-top: 2rem;
     font-size: 1.2rem;
+    color: rgb(179, 179, 179);
   }
 
   span {
@@ -69,6 +70,11 @@ export const HelpContainer = styled.div`
   width: 100%;
   margin-top: 1rem;
   display: flex;
+
+  color: rgb(179, 179, 179);
+  p {
+    color: rgb(179, 179, 179);
+  }
 `;
 export const CheckboxContainer = styled.div`
   width: 65%;
