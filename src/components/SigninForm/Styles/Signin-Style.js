@@ -86,6 +86,3 @@ export const CheckboxContainer = styled.div`
     font-size: 0.8rem;
   }
 `;
-export const helpboxContainer = styled.div`
-  width: 100%;
-`;

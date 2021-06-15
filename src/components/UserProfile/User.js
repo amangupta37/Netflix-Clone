@@ -15,7 +15,7 @@ const User = (props) => {
     <Container>
       <HeaderContainer>
         <HeaderLogoContainer>
-          <Link to="/">
+          <Link to="/browse">
             <Netflixlogo />
           </Link>
         </HeaderLogoContainer>

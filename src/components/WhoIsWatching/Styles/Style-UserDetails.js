@@ -25,6 +25,10 @@ export const UserImageContainer = styled.div`
     border-radius: 0.3rem;
     border: 2px solid #333;
   }
+
+  img:hover {
+    border: 4px solid rgb(29, 161, 242);
+  }
   span {
     color: #ffff;
     p {

@@ -4,7 +4,6 @@ import {
   FormContainer,
   HelpContainer,
   CheckboxContainer,
-  helpboxContainer,
 } from "./Styles/Signin-Style";
 import Theme from "../Theme/Theme";
 import { Link } from "react-router-dom";
@@ -38,7 +37,7 @@ const Signinform = (props) => {
                 <CheckBoxIcon />
                 <p>Remember me</p>
               </CheckboxContainer>
-              <helpboxContainer>Need Help ?</helpboxContainer>
+              Need Help ?
             </HelpContainer>
 
             <p>

@@ -11,7 +11,6 @@ const Googlelogin = (props) => {
         image: userData.user.photoURL,
       };
 
-      console.log(googleUserData);
       localStorage.setItem("googleData", JSON.stringify(googleUserData));
       localStorage.setItem("pageRedirect", JSON.stringify(true));
 
