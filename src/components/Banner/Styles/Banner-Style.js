@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import joker from "./Background/joker1.jpg";
 export const Container = styled.div`
   width: 100%;
-  height: 280px;
-  background: #000 url(${joker});
+  height: 340px;
+  background: #000
+    url("https://image.tmdb.org/t/p/original/${(prop) => prop.banner}");
   background-position: center;
   background-size: cover;
+  box-shadow: 1px -94px 33px 14px rgba(0, 0, 0, 0.75) inset;
 `;
 
 export const ContentContainer = styled.div`
@@ -18,14 +19,14 @@ export const ContentContainer = styled.div`
 
 export const ShortdetailContainer = styled.div`
   width: 100%;
-  margin-top: 8rem;
-  height: 190px;
+  margin-top: 10rem;
+  height: 200px;
 
   color: #ffff;
   padding-left: 0.5rem;
   text-align: left;
   display: grid;
-  grid-template-rows: 40px 40px 1fr;
+  grid-template-rows: auto 50px 1fr;
 `;
 
 export const TopicContainer = styled.div`
@@ -54,6 +55,9 @@ export const ButtonContainer = styled.div`
 
 export const DescriptionContainer = styled.div`
   width: 100%;
+  height: 55px;
+  overflow: hidden;
+
   // background: rgba(0, 0, 0, 0.8);
   p {
     width: 90%;
