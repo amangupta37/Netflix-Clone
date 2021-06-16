@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   ContentContainer,
@@ -7,22 +7,36 @@ import {
   ButtonContainer,
   DescriptionContainer,
 } from "./Styles/Banner-Style";
-
+import axios from "../../API/axios";
+import requests from "../../API/Requests";
 const Banner = () => {
+  const [movie, setMovie] = useState([]);
+
+  useEffect(() => {
+    const MovieData = async () => {
+      const request = await axios.get(requests.fetchNetflixOriginals);
+
+      setMovie(
+        request.data.results[
+          Math.floor(Math.random() * request.data.results.length - 1)
+        ]
+      );
+    };
+
+    MovieData();
+  }, []);
+
   return (
-    <Container>
+    <Container banner={movie.backdrop_path}>
       <ContentContainer>
         <ShortdetailContainer>
-          <TopicContainer>Education</TopicContainer>
+          <TopicContainer>{movie.name}</TopicContainer>
           <ButtonContainer>
             <button>Play</button>
             <button>My List</button>
           </ButtonContainer>
           <DescriptionContainer>
-            <p>
-              Sed et est sed ipsum et clita nonumy nonumy consetetur rebum, et
-              sed at amet sanctus. Ipsum ut aliquyam ut.
-            </p>
+            <p>{movie.overview}</p>
           </DescriptionContainer>
         </ShortdetailContainer>
       </ContentContainer>
