@@ -6,7 +6,7 @@ export const Container = styled.div`
     url("https://image.tmdb.org/t/p/original/${(prop) => prop.banner}");
   background-position: center;
   background-size: cover;
-  box-shadow: 1px -94px 33px 14px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: 0px -90px 33px 0px rgba(0, 0, 0, 0.9) inset;
 `;
 
 export const ContentContainer = styled.div`
@@ -14,7 +14,7 @@ export const ContentContainer = styled.div`
   height: 100%;
   display: grid;
   place-items: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 `;
 
 export const ShortdetailContainer = styled.div`
