@@ -12,19 +12,12 @@ const Netflix = () => {
 
   useEffect(() => {
     const RequestImage = async () => {
-      const request = await axios.get(requests.fetchTrending);
-
-      console.log(request.data.results);
+      const request = await axios.get(requests.fetchNetflixOriginals);
 
       setImages(request.data.results);
     };
     RequestImage();
   }, []);
-  console.log(
-    images.map((val) => {
-      return val.id;
-    })
-  );
 
   return (
     <Container>
