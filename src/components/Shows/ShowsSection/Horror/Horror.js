@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { HorrorContainer } from "./Styles/Horror-Style.js";
 import {
   Container,
   TitleContainer,
   ImageContainer,
-  HorrorContainer,
-} from "./Styles/Horror-Style.js";
+} from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 

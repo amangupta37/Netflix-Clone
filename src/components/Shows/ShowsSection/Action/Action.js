@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { ActionContainer } from "./Styles/Action-Style.js";
 import {
   Container,
   TitleContainer,
   ImageContainer,
-  ActionContainer,
-} from "./Styles/Action-Style.js";
+} from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 

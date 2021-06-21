@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { TopratedContainer } from "./Styles/Toprated-Style.js";
 import {
   Container,
   TitleContainer,
   ImageContainer,
-  TopratedContainer,
-} from "./Styles/Toprated-Style.js";
+} from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 

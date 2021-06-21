@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { TrendingContainer } from "./Styles/Trending-Style.js";
 import {
   Container,
   TitleContainer,
   ImageContainer,
-  TrendingContainer,
-} from "./Styles/Trending-Style.js";
+} from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 const Trending = () => {

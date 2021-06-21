@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { RomanceContainer } from "./Styles/Romance-Style.js";
 import {
   Container,
   TitleContainer,
   ImageContainer,
-  RomanceContainer,
-} from "./Styles/Romance-Style.js";
+} from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 

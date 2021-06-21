@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { NetflixOriginalContainer } from "./Styles/Netflix-Styles";
 import {
   Container,
   TitleContainer,
   ImageContainer,
-  NetflixOriginalContainer,
-} from "./Styles/Netflix-Styles";
+  VideoContainer,
+} from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
+import Watch from "../../../WatchShow/Watch";
 const Netflix = () => {
   const [images, setImages] = useState([]);
+  const [video, setVideo] = useState(false);
 
   useEffect(() => {
     const RequestImage = async () => {
@@ -18,6 +21,13 @@ const Netflix = () => {
     };
     RequestImage();
   }, []);
+
+  console.log(images);
+
+  const showVideo = (id, name) => {
+    console.log(id, name);
+    setVideo(true);
+  };
 
   return (
     <Container>
@@ -30,7 +40,10 @@ const Netflix = () => {
           .reverse()
           .map((val) => {
             return (
-              <NetflixOriginalContainer key={val.id}>
+              <NetflixOriginalContainer
+                key={val.id}
+                onClick={() => showVideo([val.id, val.name])}
+              >
                 <img
                   src={`https://image.tmdb.org/t/p/original/${val.poster_path}`}
                   alt="nn"
@@ -39,6 +52,12 @@ const Netflix = () => {
             );
           })}
       </ImageContainer>
+
+      {video ? (
+        <VideoContainer>
+          <Watch />
+        </VideoContainer>
+      ) : null}
     </Container>
   );
 };
