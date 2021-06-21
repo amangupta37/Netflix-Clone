@@ -8,7 +8,7 @@ export const ShowsContainer = styled.div`
   width: 100%;
 
   display: grid;
-  grid-template-rows: 280px repeat(6, 200px);
+  grid-template-rows: auto repeat(6, 200px);
 `;
 
 export const NetflixOriginalContainer = styled.div`
