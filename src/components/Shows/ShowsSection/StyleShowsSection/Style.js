@@ -32,8 +32,6 @@ export const ImageContainer = styled.div`
 
 export const VideoContainer = styled.div`
   width: 100%;
-  background: red;
+  // background: red;
   color: #fff;
-  padding-top: 1rem;
-  padding-left: 1rem;
 `;
