@@ -12,6 +12,8 @@ import Watch from "../../../WatchShow/Watch";
 const Netflix = () => {
   const [images, setImages] = useState([]);
   const [video, setVideo] = useState(false);
+  const [movieName, setmovieName] = useState([]);
+  const [moviePath, setmoviePath] = useState([]);
 
   useEffect(() => {
     const RequestImage = async () => {
@@ -22,10 +24,11 @@ const Netflix = () => {
     RequestImage();
   }, []);
 
-  console.log(images);
+  // console.log(images);
 
-  const showVideo = (id, name) => {
-    console.log(id, name);
+  const showVideo = (id, name, vid) => {
+    setmovieName(name);
+    setmoviePath(vid);
     setVideo(true);
   };
 
@@ -42,7 +45,9 @@ const Netflix = () => {
             return (
               <NetflixOriginalContainer
                 key={val.id}
-                onClick={() => showVideo([val.id, val.name])}
+                onClick={() =>
+                  showVideo([val.id], [val.name], [val.backdrop_path])
+                }
               >
                 <img
                   src={`https://image.tmdb.org/t/p/original/${val.poster_path}`}
@@ -55,7 +60,11 @@ const Netflix = () => {
 
       {video ? (
         <VideoContainer>
-          <Watch />
+          <Watch
+            posterDetails={movieName}
+            posterPath={moviePath}
+            cutVideo={setVideo}
+          />
         </VideoContainer>
       ) : null}
     </Container>
