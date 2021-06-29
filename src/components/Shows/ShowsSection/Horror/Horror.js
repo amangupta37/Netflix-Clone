@@ -32,10 +32,12 @@ const Horror = () => {
           .map((val) => {
             return (
               <HorrorContainer key={val.id}>
-                <img
-                  src={`https://image.tmdb.org/t/p/original/${val.backdrop_path}`}
-                  alt="nn"
-                />
+                {val.backdrop_path !== null ? (
+                  <img
+                    src={`https://image.tmdb.org/t/p/original/${val.backdrop_path}`}
+                    alt="nn"
+                  />
+                ) : null}
               </HorrorContainer>
             );
           })}

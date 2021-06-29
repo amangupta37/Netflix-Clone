@@ -24,13 +24,13 @@ const Netflix = () => {
     RequestImage();
   }, []);
 
-  // console.log(images);
-
   const showVideo = (id, name, vid) => {
     setmovieName(name);
     setmoviePath(vid);
     setVideo(true);
   };
+
+  console.log(images);
 
   return (
     <Container>
@@ -49,10 +49,12 @@ const Netflix = () => {
                   showVideo([val.id], [val.name], [val.backdrop_path])
                 }
               >
-                <img
-                  src={`https://image.tmdb.org/t/p/original/${val.poster_path}`}
-                  alt="nn"
-                />
+                {val.poster_path !== null ? (
+                  <img
+                    src={`https://image.tmdb.org/t/p/original/${val.poster_path}`}
+                    alt="nn"
+                  />
+                ) : null}
               </NetflixOriginalContainer>
             );
           })}
@@ -63,7 +65,7 @@ const Netflix = () => {
           <Watch
             posterDetails={movieName}
             posterPath={moviePath}
-            cutVideo={setVideo}
+            closeVideo={setVideo}
           />
         </VideoContainer>
       ) : null}
