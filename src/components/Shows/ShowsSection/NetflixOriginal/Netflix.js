@@ -14,6 +14,7 @@ const Netflix = () => {
   const [video, setVideo] = useState(false);
   const [movieName, setmovieName] = useState([]);
   const [moviePath, setmoviePath] = useState([]);
+  const [movieID, setmovieID] = useState([]);
 
   useEffect(() => {
     const RequestImage = async () => {
@@ -27,10 +28,11 @@ const Netflix = () => {
   const showVideo = (id, name, vid) => {
     setmovieName(name);
     setmoviePath(vid);
+    setmovieID(id);
     setVideo(true);
   };
 
-  console.log(images);
+  // console.log(images);
 
   return (
     <Container>
@@ -63,6 +65,7 @@ const Netflix = () => {
       {video ? (
         <VideoContainer>
           <Watch
+            posterid={movieID}
             posterDetails={movieName}
             posterPath={moviePath}
             closeVideo={setVideo}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   VideoContainer,
@@ -8,10 +8,19 @@ import {
   ButtonContainer,
   CrossContainer,
 } from "./Styles/Watch-Style";
-import CancelIcon from "@material-ui/icons/Cancel";
 import ClearIcon from "@material-ui/icons/Clear";
-
+import Videoplayer from "./VideoPlayer/Videoplayer";
 const Watch = (props) => {
+  const [showTrailer, setshowTrailer] = useState(false);
+  const ClosePopup = () => {
+    props.closeVideo(false);
+  };
+
+  const TrailerPopup = (movieID) => {
+    setshowTrailer(true);
+    console.log(movieID[0]);
+  };
+
   return (
     <Container>
       <VideoContainer>
@@ -19,11 +28,11 @@ const Watch = (props) => {
           <h2>{props.posterDetails}</h2>
         </TitleContainer>
         <CrossContainer>
-          <ClearIcon />
+          <ClearIcon onClick={ClosePopup} />
         </CrossContainer>
       </VideoContainer>
       <VideoBgContainer>
-        <ButtonContainer>
+        <ButtonContainer onClick={() => TrailerPopup(props.posterid)}>
           <h2>Play</h2>
         </ButtonContainer>
 
@@ -34,6 +43,7 @@ const Watch = (props) => {
           />
         </BgContainer>
       </VideoBgContainer>
+      {showTrailer ? <Videoplayer setshowTrailer={setshowTrailer} /> : null}
     </Container>
   );
 };

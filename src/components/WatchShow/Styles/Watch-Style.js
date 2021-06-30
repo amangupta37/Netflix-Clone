@@ -27,6 +27,7 @@ export const ButtonContainer = styled.div`
   padding-top: 0.4rem;
   position: absolute;
   opacity: 0.8;
+  border-radius: 0.2rem;
   h2 {
     text-align: center;
   }
@@ -38,7 +39,7 @@ export const VideoBgContainer = styled.div`
 
 export const BgContainer = styled.div`
   width: 100%;
-  height: 150px;
+  height: 210px;
   margin-top: 1rem;
 
   img {
