@@ -10,7 +10,7 @@ import {
 import axios from "../../API/axios";
 import requests from "../../API/Requests";
 const Banner = () => {
-  const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState([" "]);
 
   useEffect(() => {
     const MovieData = async () => {
