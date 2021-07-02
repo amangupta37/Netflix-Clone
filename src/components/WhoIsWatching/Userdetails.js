@@ -10,9 +10,13 @@ import {
 // import UserProfile from "./Styles/UserProfile/user.png";
 import Plan from "../Plans/Plan";
 import { auth } from "../../lib/firebase.prod";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Userdetails = (props) => {
+  let history = useHistory();
+  const moveToBrowse = () => {
+    history.push("/browse");
+  };
   const userLogout = () => {
     auth.signOut().then(() => {
       props.logout(false);
@@ -26,9 +30,8 @@ const Userdetails = (props) => {
     <Container>
       <UserContainer>
         <UserImageContainer>
-          <Link to="/browse">
-            <img src={userInfo.image} alt="userprofile" />
-          </Link>
+          <img src={userInfo.image} alt="userprofile" onClick={moveToBrowse} />
+
           <span>
             <p>{userInfo.name}</p>
           </span>

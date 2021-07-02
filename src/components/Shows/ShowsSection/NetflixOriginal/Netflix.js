@@ -39,7 +39,11 @@ const Netflix = () => {
       <TitleContainer>
         <h2>NETFLIX ORIGINALS</h2>
       </TitleContainer>
-      <ImageContainer>
+      <ImageContainer
+        onScroll={() => {
+          console.log("hey man ");
+        }}
+      >
         {images
           .slice(0)
           .reverse()
