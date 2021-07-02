@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Home, Browse, Signin, Signup, Userprofile } from "./pages";
 
 import ProtectedRoute from "./Protected/ProtectedRoute";
 const App = () => {
+  const [userAuth, setuserAuth] = useState(false);
+
   return (
     <Router>
       <Route path="/" exact>
@@ -16,9 +18,13 @@ const App = () => {
         <Signup />
       </Route>
       <Route path="/signin">
-        <Signin />
+        <Signin setuserAuth={setuserAuth} />
       </Route>
-      <ProtectedRoute path="/browse" component={Browse} />
+      <ProtectedRoute
+        path="/browse"
+        component={Browse}
+        authconfirm={userAuth}
+      />
     </Router>
   );
 };

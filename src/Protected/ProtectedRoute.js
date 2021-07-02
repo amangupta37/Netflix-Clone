@@ -1,10 +1,14 @@
 import React from "react";
 import { Redirect, Route } from "react-router-dom";
 
-const isAuthenticated = window.localStorage.getItem("pageRedirect");
+const ProtectedRoute = ({
+  component: Component,
+  authconfirm: userInfo,
+  ...rest
+}) => {
+  const isAuthenticated = window.localStorage.getItem("pageRedirect");
+  console.log(isAuthenticated || userInfo);
 
-console.log(isAuthenticated);
-const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
       {...rest}
