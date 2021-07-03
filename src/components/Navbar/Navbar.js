@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [initialPosition, navBackground]);
 
   return (
-    <Container>
+    <Container toogleBackground={navBackground}>
       <NavContainer toogleBackground={navBackground}>
         <LogoContainer>
           <Netflixlogo />

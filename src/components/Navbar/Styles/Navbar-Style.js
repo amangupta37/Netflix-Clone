@@ -5,14 +5,12 @@ export const Container = styled.div`
   height: 50px;
   position: fixed;
   top: 0;
-  display: block;
 `;
 export const NavContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-
-  background: ${(prop) => (prop.toogleBackground ? "rgb(0, 0, 0)" : "none")};
+  background: ${(prop) => (prop.toogleBackground ? "rgb(0, 0, 0)" : null)};
 `;
 export const LogoContainer = styled.div`
   width: 130px;
