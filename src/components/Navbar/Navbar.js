@@ -31,7 +31,10 @@ const Navbar = () => {
   }, [initialPosition, navBackground]);
 
   return (
-    <Container toogleBackground={navBackground}>
+    <Container
+      toogleBackground={navBackground}
+      initialPosition={initialPosition}
+    >
       <NavContainer toogleBackground={navBackground}>
         <LogoContainer>
           <Netflixlogo />
