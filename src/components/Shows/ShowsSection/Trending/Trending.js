@@ -7,7 +7,7 @@ import {
 } from "../../ShowsSection/StyleShowsSection/Style.js";
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
-const Trending = () => {
+const Trending = ({ searchInput }) => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
@@ -26,6 +26,17 @@ const Trending = () => {
       </TitleContainer>
       <ImageContainer>
         {images
+          .filter((val) => {
+            if (val.original_title) {
+              return searchInput === ""
+                ? val
+                : val.original_title
+                    .toLowerCase()
+                    .includes(searchInput.toLowerCase());
+            } else {
+              return null;
+            }
+          })
           .slice(0)
           .reverse()
           .map((val) => {

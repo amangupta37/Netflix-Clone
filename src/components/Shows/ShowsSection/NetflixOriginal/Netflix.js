@@ -9,7 +9,7 @@ import {
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 import Watch from "../../../WatchShow/Watch";
-const Netflix = () => {
+const Netflix = ({ searchInput }) => {
   const [images, setImages] = useState([]);
   const [video, setVideo] = useState(false);
   const [movieName, setmovieName] = useState([]);
@@ -32,19 +32,18 @@ const Netflix = () => {
     setVideo(true);
   };
 
-  // console.log(images);
-
   return (
     <Container>
       <TitleContainer>
         <h2>NETFLIX ORIGINALS</h2>
       </TitleContainer>
-      <ImageContainer
-        onScroll={() => {
-          console.log("hey man ");
-        }}
-      >
+      <ImageContainer>
         {images
+          .filter((val) => {
+            return searchInput === ""
+              ? val
+              : val.name.toLowerCase().includes(searchInput.toLowerCase());
+          })
           .slice(0)
           .reverse()
           .map((val) => {

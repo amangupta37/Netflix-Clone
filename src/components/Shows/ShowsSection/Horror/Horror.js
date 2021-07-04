@@ -8,7 +8,7 @@ import {
 import axios from "../../../../API/axios";
 import requests from "../../../../API/Requests";
 
-const Horror = () => {
+const Horror = ({ searchInput }) => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
@@ -27,6 +27,13 @@ const Horror = () => {
       </TitleContainer>
       <ImageContainer>
         {images
+          .filter((val) => {
+            return searchInput === ""
+              ? val
+              : val.original_title
+                  .toLowerCase()
+                  .includes(searchInput.toLowerCase());
+          })
           .slice(0)
           .reverse()
           .map((val) => {

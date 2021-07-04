@@ -26,9 +26,35 @@ export const ProfileContainer = styled.div`
   padding-right: 1rem;
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 
   img {
     width: 30px;
     height: 30px;
+  }
+`;
+
+export const SearchBarContainer = styled.div`
+  width: 75%;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+
+  #search {
+    transform: scale(1.3);
+    fill: #ffffff;
+
+    margin-top: 0.3rem;
+  }
+
+  input {
+    width: 85%;
+    border: 1px solid #ffffff;
+    outline: none;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.2rem;
+    padding-left: 0.5rem;
+    color: #ffffffff;
   }
 `;

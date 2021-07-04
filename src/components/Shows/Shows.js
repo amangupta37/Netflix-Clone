@@ -19,30 +19,30 @@ import Comedy from "./ShowsSection/Comedy/Comedy";
 import Horror from "./ShowsSection/Horror/Horror";
 import Romance from "./ShowsSection/Romance/Romance";
 
-const Shows = () => {
+const Shows = ({ searchInput }) => {
   return (
     <Container>
       <ShowsContainer>
         <NetflixOriginalContainer>
-          <Netflix />
+          <Netflix searchInput={searchInput} />
         </NetflixOriginalContainer>
         <TrendingContainer>
-          <Trending />
+          <Trending searchInput={searchInput} />
         </TrendingContainer>
         <TopRatedContainer>
-          <Toprated />
+          <Toprated searchInput={searchInput} />
         </TopRatedContainer>
         <ActionContainer>
-          <Action />
+          <Action searchInput={searchInput} />
         </ActionContainer>
         <ComedyContainer>
-          <Comedy />
+          <Comedy searchInput={searchInput} />
         </ComedyContainer>
         <HorrorContainer>
-          <Horror />
+          <Horror searchInput={searchInput} />
         </HorrorContainer>
         <RomanceContainer>
-          <Romance />
+          <Romance searchInput={searchInput} />
         </RomanceContainer>
       </ShowsContainer>
     </Container>
