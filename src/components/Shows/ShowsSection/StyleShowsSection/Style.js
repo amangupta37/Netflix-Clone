@@ -18,7 +18,7 @@ export const TitleContainer = styled.div`
 
 export const ImageContainer = styled.div`
   width: 100%;
-  height: 236px;
+  height: auto;
 
   padding-left: 1rem;
   display: flex;
@@ -32,6 +32,5 @@ export const ImageContainer = styled.div`
 
 export const VideoContainer = styled.div`
   width: 100%;
-  // background: red;
   color: #fff;
 `;

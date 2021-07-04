@@ -31,6 +31,7 @@ export const ButtonContainer = styled.div`
   h2 {
     text-align: center;
   }
+  z-index: 0;
 `;
 
 export const VideoBgContainer = styled.div`

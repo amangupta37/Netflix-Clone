@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 50px;
   position: fixed;
   top: 0;
+  z-index: 10000;
   display: ${(prop) =>
     prop.toogleBackground || prop.initialPosition === 0 ? "block" : "none"};
 `;

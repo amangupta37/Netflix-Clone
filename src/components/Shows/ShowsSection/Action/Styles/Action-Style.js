@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const ActionContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 130px;
   img {
     width: 200px;
-    height: 130px;
+    height: 100%;
   }
 `;

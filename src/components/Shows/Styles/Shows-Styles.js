@@ -1,14 +1,13 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   width: 100%;
-  background: #33333;
+  // background: red;
 `;
 export const ShowsContainer = styled.div`
   width: 100%;
-
   display: grid;
-  grid-template-rows: auto repeat(6, 200px);
+  grid-template-rows: auto repeat(6, auto);
 `;
 
 export const NetflixOriginalContainer = styled.div`
@@ -17,30 +16,24 @@ export const NetflixOriginalContainer = styled.div`
 
 export const TrendingContainer = styled.div`
   width: 100%;
-  // background: green;
 `;
 
 export const TopRatedContainer = styled.div`
   width: 100%;
-  // background: pink;
 `;
 
 export const ActionContainer = styled.div`
   width: 100%;
-  // background: lime;
 `;
 
 export const ComedyContainer = styled.div`
   width: 100%;
-  // background: cyan;
 `;
 
 export const HorrorContainer = styled.div`
   width: 100%;
-  // background: purple;
 `;
 
 export const RomanceContainer = styled.div`
   width: 100%;
-  // background: white;
 `;
