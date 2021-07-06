@@ -2,16 +2,19 @@
   {
     "id": 1,
     "plan": "Netflix Standard",
-    "screen": "1080p"
+    "screen": "1080p",
+    "amount": "50000"
   },
   {
     "id": 2,
     "plan": "Netflix Basic",
-    "screen": "480p"
+    "screen": "480p",
+    "amount": "25000"
   },
   {
     "id": 3,
     "plan": "Netflix Premium",
-    "screen": "4K+HDR"
+    "screen": "4K+HDR",
+    "amount": "100000"
   }
 ]

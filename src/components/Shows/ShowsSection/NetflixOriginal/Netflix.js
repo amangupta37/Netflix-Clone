@@ -41,7 +41,7 @@ const Netflix = ({ searchInput }) => {
         {images
           .filter((val) => {
             return searchInput === ""
-              ? val
+              ? vals
               : val.name.toLowerCase().includes(searchInput.toLowerCase());
           })
           .slice(0)

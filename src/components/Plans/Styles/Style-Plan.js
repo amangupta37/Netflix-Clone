@@ -32,9 +32,10 @@ export const PlanNameConatiner = styled.div`
   }
 `;
 export const SubscribeConatiner = styled.div`
-  width: 50%;
+  width: 200%;
   height: 80%;
   display: flex;
+  backgorund: green;
   flex-direction: row-reverse;
 
   button {
