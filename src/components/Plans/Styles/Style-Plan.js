@@ -32,7 +32,7 @@ export const PlanNameConatiner = styled.div`
   }
 `;
 export const SubscribeConatiner = styled.div`
-  width: 200%;
+  width: 180%;
   height: 80%;
   display: flex;
   backgorund: green;
@@ -46,5 +46,9 @@ export const SubscribeConatiner = styled.div`
     outline: none;
     font-size: 1rem;
     border-radius: 0.2rem;
+  }
+  #btn {
+    font-size: 0.9rem;
+    background: #333333;
   }
 `;

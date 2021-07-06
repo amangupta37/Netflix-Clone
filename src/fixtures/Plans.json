@@ -1,18 +1,18 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "plan": "Netflix Standard",
     "screen": "1080p",
     "amount": "50000"
   },
   {
-    "id": 2,
+    "id": 1,
     "plan": "Netflix Basic",
     "screen": "480p",
     "amount": "25000"
   },
   {
-    "id": 3,
+    "id": 2,
     "plan": "Netflix Premium",
     "screen": "4K+HDR",
     "amount": "100000"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   PlanConatiner,
@@ -8,19 +8,28 @@ import {
 } from "./Styles/Style-Plan";
 import Stripe from "react-stripe-checkout";
 import Plans from "../../fixtures/Plans.json";
+
 const Plan = () => {
-  const paymentMode = () => {
-    console.log("click ");
+  const [subsrcibed, setSubsrcibed] = useState(
+    JSON.parse(localStorage.getItem("Paymentdata"))
+  );
+
+  let SubscriptionType;
+
+  const paymentMode = (id) => {
+    SubscriptionType = id;
   };
 
-  const userToken = (token, address) => {
-    console.log(token, address);
+  const userToken = (token, address, kid) => {
+    localStorage.setItem("Paymentdata", SubscriptionType);
+    setSubsrcibed(SubscriptionType);
   };
 
+  console.log(subsrcibed);
   return (
     <Container>
       <PlanConatiner>
-        {Plans.map((value) => {
+        {Plans.map((value, index) => {
           return (
             <PlanBarConatiner>
               <PlanNameConatiner>
@@ -36,7 +45,13 @@ const Plan = () => {
                 currency="inr"
               >
                 <SubscribeConatiner>
-                  <button>Subscribe</button>
+                  {subsrcibed === index ? (
+                    <button id="btn">Subscribed</button>
+                  ) : (
+                    <button onClick={() => paymentMode(index)}>
+                      Subscribe
+                    </button>
+                  )}
                 </SubscribeConatiner>
               </Stripe>
             </PlanBarConatiner>
