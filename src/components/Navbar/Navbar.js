@@ -12,6 +12,8 @@ import { Netflixlogo } from "../Header/Logo/Netflixlogo";
 
 import user from "../WhoIsWatching/Styles/UserProfile/user.png";
 
+import { Link } from "react-router-dom";
+
 const Navbar = ({ setsearchInput }) => {
   const [showSearchBar, setshowSearchBar] = useState(false);
 
@@ -50,7 +52,9 @@ const Navbar = ({ setsearchInput }) => {
     >
       <NavContainer toogleBackground={navBackground}>
         <LogoContainer>
-          <Netflixlogo />
+          <Link to="/">
+            <Netflixlogo />
+          </Link>
         </LogoContainer>
 
         <ProfileContainer>
@@ -65,7 +69,9 @@ const Navbar = ({ setsearchInput }) => {
               />
             ) : null}
           </SearchBarContainer>
-          <img src={user} alt="profile" />
+          <Link to="/signin">
+            <img src={user} alt="profile" />
+          </Link>
         </ProfileContainer>
       </NavContainer>
     </Container>
