@@ -4,7 +4,6 @@ import "firebase/firestore";
 
 import "firebase/auth";
 
-// import { seedDatabase } from "../seed";
 const app = Firebase.initializeApp({
   apiKey: "AIzaSyBH_hmvM1XOzsR9wT6GkJnFJjNgP4F2yto",
   authDomain: "netflix-517b9.firebaseapp.com",
@@ -20,5 +19,4 @@ export const auth = Firebase.auth();
 
 export const provider = new Firebase.auth.GoogleAuthProvider();
 
-// seedDatabase(firebase);
 export default app;
