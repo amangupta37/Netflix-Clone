@@ -25,7 +25,6 @@ const Plan = () => {
     setSubsrcibed(SubscriptionType);
   };
 
-  console.log(subsrcibed);
   return (
     <Container>
       <PlanConatiner>
@@ -46,7 +45,9 @@ const Plan = () => {
               >
                 <SubscribeConatiner>
                   {subsrcibed === index ? (
-                    <button id="btn">Subscribed</button>
+                    <button id="btn" disabled={subsrcibed === index}>
+                      Subscribed
+                    </button>
                   ) : (
                     <button onClick={() => paymentMode(index)}>
                       Subscribe

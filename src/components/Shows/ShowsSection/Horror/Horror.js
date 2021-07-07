@@ -34,7 +34,7 @@ const Horror = ({ searchInput }) => {
   return (
     <Container>
       <TitleContainer>
-        <h2>Horror Movies</h2>
+        {searchInput === "" ? <h2>Horror Movies</h2> : null}
       </TitleContainer>
       <ImageContainer>
         {images

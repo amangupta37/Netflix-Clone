@@ -35,7 +35,7 @@ const Trending = ({ searchInput }) => {
   return (
     <Container>
       <TitleContainer>
-        <h2>Trending Now</h2>
+        {searchInput === "" ? <h2>Trending Now</h2> : null}
       </TitleContainer>
       <ImageContainer>
         {images

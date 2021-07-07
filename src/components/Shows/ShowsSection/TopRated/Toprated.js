@@ -33,7 +33,7 @@ const Toprated = ({ searchInput }) => {
   return (
     <Container>
       <TitleContainer>
-        <h2>Top Rated</h2>
+        {searchInput === "" ? <h2>Top Rated</h2> : null}
       </TitleContainer>
       <ImageContainer>
         {images
