@@ -11,6 +11,9 @@ export const Jumbocontainer = styled.div`
     grid-template-column: 200px 1fr 1fr;
     grid-row-gap: 0.3rem;
   }
+  @media only screen and (max-width: 900px) {
+    background: red;
+  }
 `;
 
 export const Wrapjumbo = styled.div`
