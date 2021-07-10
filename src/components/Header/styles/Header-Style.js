@@ -4,6 +4,10 @@ export const Container = styled.div`
   width: 100%;
   height: 490px;
   border-bottom: 0.3rem solid #333;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 766px;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -17,6 +21,10 @@ export const HeaderContainer = styled.div`
   box-shadow: -2px 90px 27px -27px rgba(0, 0, 0, 1) inset;
   display: grid;
   grid-template-rows: 30px 1fr 250px;
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 100%;
+    grid-template-rows: 0px 1fr 250px;
+  }
 `;
 
 export const EffectContainer = styled.div`
@@ -25,6 +33,9 @@ export const EffectContainer = styled.div`
   position: absolute;
   background: #000;
   opacity: 0.7;
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 100%;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -34,9 +45,16 @@ export const TitleContainer = styled.div`
   z-index: 0;
   display: grid;
   place-items: center;
-  // background: green;
   color: #ffff;
-  span {
+`;
+
+export const HoldTitle = styled.div`
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0;
+
+  h1 {
     font-size: 1.7rem;
     font-weight: 700;
     text-align: center;
@@ -44,11 +62,25 @@ export const TitleContainer = styled.div`
   p {
     padding-top: 1rem;
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    margin-top: 5rem;
+    grid-gap: 0;
+    h1 {
+      width: 60%;
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    p {
+      font-size: 1.8rem;
+      padding-top: 0;
+    }
+  }
 `;
 
 export const MailFormContainer = styled.div`
   width: 100%;
   padding: 0;
-  // background: red;
   z-index: 1;
 `;
