@@ -5,6 +5,7 @@ import {
   TitleContainer,
   MailFormContainer,
   EffectContainer,
+  HoldTitle,
 } from "./styles/Header-Style";
 import Navigation from "../Navigation/Navigation";
 import Mailform from "../MailForm/Mailform";
@@ -16,8 +17,10 @@ const Header = () => {
         <EffectContainer></EffectContainer>
         <Navigation />
         <TitleContainer>
-          <span>Unlimited movies, TV shows and more.</span>
-          <p>Watch anywhere. Cancel anytime.</p>
+          <HoldTitle>
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+          </HoldTitle>
         </TitleContainer>
         <MailFormContainer>
           <Mailform />
