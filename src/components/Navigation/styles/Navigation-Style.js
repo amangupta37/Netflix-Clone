@@ -7,17 +7,27 @@ export const NavigationContainer = styled.div`
   display: grid;
   grid-template-columns: 90px 1fr;
   grid-gap: 2rem;
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 90%;
+  }
 `;
 
 export const IconContainer = styled.div`
   opacity: 0.8;
   z-index: 1;
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 170px;
+  }
 `;
 export const SideContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
   z-index: 1;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    gap: 2rem;
+  }
 `;
 
 export const LanguageContainer = styled.div`
@@ -29,6 +39,12 @@ export const LanguageContainer = styled.div`
     outline: none;
     padding-left: 0.2rem;
     border: 2px solid white;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    select {
+      width: 100px;
+      height: 2.2rem;
+    }
   }
 `;
 
@@ -44,5 +60,14 @@ export const SignupContainer = styled.div`
     opacity: 1;
     font-weight: 500;
     font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    button {
+      width: 85px;
+      height: 2rem;
+      font-size: 1rem;
+    }
   }
 `;

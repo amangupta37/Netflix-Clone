@@ -30,7 +30,6 @@ export const TextContainer = styled.div`
 export const MailContainer = styled.div`
   width: 90%;
   margin: 0 auto;
-  background: green;
   margin-top: 0.8rem;
 
   input {
