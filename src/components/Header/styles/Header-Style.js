@@ -23,6 +23,7 @@ export const HeaderContainer = styled.div`
   grid-template-rows: 30px 1fr 250px;
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
     height: 100%;
+
     grid-template-rows: 0px 1fr 250px;
   }
 `;
@@ -34,7 +35,7 @@ export const EffectContainer = styled.div`
   background: #000;
   opacity: 0.7;
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-    height: 100%;
+    height: 766px;
   }
 `;
 
