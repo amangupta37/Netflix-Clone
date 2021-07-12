@@ -6,11 +6,13 @@ export const Container = styled.div`
     width: 50%;
     margin: 0 auto;
   }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 55%;
+  }
 `;
 
 export const AccordionContainer = styled.div`
   width: 100%;
-  //   background: red;
 `;
 
 export const AccordionBar = styled.div`
@@ -26,12 +28,16 @@ export const AccordionBar = styled.div`
   @media only screen and (min-width: 800px) {
     height: 40px;
   }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 70px;
+    grid-template-columns: 1fr 80px;
+  }
 `;
 
 export const AccordionContent = styled.div`
   margin-left: 1rem;
   padding-top: 0.8rem;
-  // background: red;
+
   font-size: 1.2rem;
   font-weight: 300;
   text-align: left;
@@ -40,11 +46,25 @@ export const AccordionContent = styled.div`
     font-size: 0.9rem;
     font-weight: 100;
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding: 1.3rem;
+  }
 `;
 export const AccordionAddIcon = styled.div`
   display: grid;
-  // background: yellow;
   place-items: center;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    #iconAdd {
+      transform: scale(1.8);
+    }
+    #iconClear {
+      transform: scale(1.8);
+    }
+  }
 `;
 
 export const AnswerSection = styled.div`
@@ -59,5 +79,10 @@ export const AnswerSection = styled.div`
 
   @media only screen and (min-width: 800px) {
     font-size: 15px;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    font-size: 1.8rem;
+    padding: 2rem;
   }
 `;

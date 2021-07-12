@@ -29,9 +29,9 @@ const Accordion = () => {
               <AccordionContent>{faq.header}</AccordionContent>
               <AccordionAddIcon>
                 {displayAnswers === index ? (
-                  <ClearIcon />
+                  <ClearIcon id="iconClear" />
                 ) : (
-                  <AddIcon onClick={() => showAnswer(index)} />
+                  <AddIcon id="iconAdd" onClick={() => showAnswer(index)} />
                 )}
               </AccordionAddIcon>
             </AccordionBar>
