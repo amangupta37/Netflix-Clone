@@ -11,8 +11,8 @@ export const Jumbocontainer = styled.div`
     grid-template-column: 200px 1fr 1fr;
     grid-row-gap: 0.3rem;
   }
-  @media only screen and (max-width: 900px) {
-    background: red;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   }
 `;
 
@@ -24,6 +24,9 @@ export const Wrapjumbo = styled.div`
   @media only screen and (min-width: 800px) {
     height: 280px;
   }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 480px;
+  }
 `;
 
 export const Jumbosection = styled.div`
@@ -33,14 +36,18 @@ export const Jumbosection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-
+  // background: red;
   @media only screen and (min-width: 800px) {
     width: 80%;
-    // background: yellow;
     margin: 0 auto;
     height: 200px;
     flex-direction: ${(prop) => (prop.rowDirection ? "row" : "row-reverse")};
     height: 250px;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 100%;
+    width: 80%;
+    gap: 0rem;
   }
 `;
 
@@ -66,7 +73,7 @@ export const Jumbotextsection = styled.div`
     padding-top: 2rem;
 
     padding-left: 2rem;
-    // background: red;
+
     h1 {
       font-size: 1.8rem;
       font-weight: 550;
@@ -78,6 +85,26 @@ export const Jumbotextsection = styled.div`
       width: 350px;
     }
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: auto;
+    text-align: left;
+
+    padding-top: 4.5rem;
+
+    padding-left: 3rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 550;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      text-align: left;
+      width: 520px;
+    }
+  }
 `;
 
 export const Jumboimagesection = styled.div`
@@ -87,17 +114,24 @@ export const Jumboimagesection = styled.div`
   place-items: center;
 
   img {
-    width: 65%;
+    width: ${(prop) => (prop.image === 2 ? "200px" : "65%")};
     height: 180px;
   }
   @media only screen and (min-width: 800px) {
     width: 100%;
     margin-top: 1rem;
-
-    // background: green;
     img {
       width: 290px;
       height: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 100%;
+    margin-top: 1rem;
+    img {
+      width: 490px;
+      height: 380px;
     }
   }
 `;
