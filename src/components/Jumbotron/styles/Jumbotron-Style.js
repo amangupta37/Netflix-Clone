@@ -31,12 +31,10 @@ export const Wrapjumbo = styled.div`
 
 export const Jumbosection = styled.div`
   width: 100%;
-
   color: #ffff;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  // background: red;
   @media only screen and (min-width: 800px) {
     width: 80%;
     margin: 0 auto;
@@ -114,7 +112,7 @@ export const Jumboimagesection = styled.div`
   place-items: center;
 
   img {
-    width: ${(prop) => (prop.image === 2 ? "200px" : "65%")};
+    width: 65%;
     height: 180px;
   }
   @media only screen and (min-width: 800px) {
@@ -136,11 +134,43 @@ export const Jumboimagesection = styled.div`
   }
 `;
 
+export const DownloadSection = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  @media only screen and (min-width: 800px) {
+    width: 80%;
+    grid-template-rows: 200px 1fr;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 80%;
+    grid-template-rows: 350px 1fr;
+  }
+`;
+
+export const ImageSection = styled.div`
+  width: 45%;
+  margin: 0 auto;
+  display: grid;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (min-width: 800px) {
+    grid-template-rows: 200px 1fr;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 55%;
+  }
+`;
+
 export const Jumbonotify = styled.div`
   width: 250px;
   height: 70px;
+  margin: 0 auto;
   background: #000;
-  // margin-bottom: 20rem;
   position: relative;
   bottom: 3.5rem;
   border: 2px solid rgba(255, 255, 255, 0.25);
@@ -155,12 +185,22 @@ export const Jumbonotify = styled.div`
     background: #000;
     opacity: 0.99;
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 300px;
+    height: 100px;
+    bottom: 8rem;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.8rem;
+    bottom: 8rem;
+    background: #000;
+    opacity: 0.99;
+  }
 `;
 
 export const Jumbonotifycontent = styled.div`
   width: 100%;
   height: 100%;
-  // background: red;
   padding: 0.6rem;
   display: flex;
   gap: 1rem;
@@ -168,24 +208,39 @@ export const Jumbonotifycontent = styled.div`
     padding: 0.3rem;
     padding-left: 0.5rem;
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    padding: 0.5rem;
+    padding-left: 1rem;
+  }
 `;
 export const Imageboxshot = styled.div`
   width: 40px;
   height: 3rem;
-
   img {
     width: 100%;
     height: 100%;
   }
   @media only screen and (min-width: 800px) {
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 90px;
+    height: 5rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
 export const Textboxshot = styled.div`
   width: 100%;
-  // background: red;
   display: flex;
   gap: 1rem;
   @media only screen and (min-width: 800px) {
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   }
 `;
 
@@ -214,12 +269,21 @@ export const Textarea = styled.div`
       font-size: 8px;
     }
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    margin-top: 1rem;
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const Iconarea = styled.div`
   width: 40%;
-  // background: red;
-
   img {
     width: 100%;
     height: 100%;
@@ -230,6 +294,14 @@ export const Iconarea = styled.div`
     img {
       width: 80%;
       height: 80%;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding-top: 0.7rem;
+    img {
+      width: 75%;
+      height: 70%;
     }
   }
 `;
