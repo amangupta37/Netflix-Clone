@@ -2,17 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  //   background: red;
 `;
 
 export const PlanConatiner = styled.div`
   width: 100%;
-  //   background: green;
 `;
 export const PlanBarConatiner = styled.div`
   width: 100%;
   height: 3rem;
-  //   background: yellow;
   margin-top: 1rem;
   display: flex;
 `;
@@ -32,10 +29,9 @@ export const PlanNameConatiner = styled.div`
   }
 `;
 export const SubscribeConatiner = styled.div`
-  width: 180%;
+  width: 120px;
   height: 80%;
   display: flex;
-  backgorund: green;
   flex-direction: row-reverse;
 
   button {
@@ -46,9 +42,14 @@ export const SubscribeConatiner = styled.div`
     outline: none;
     font-size: 1rem;
     border-radius: 0.2rem;
+    cursor: pointer;
   }
   #btn {
     font-size: 0.9rem;
     background: #333333;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    padding-left: 2rem;
+    width: 200px;
   }
 `;

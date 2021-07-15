@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: auto;
-  //   background: red;
+  // background: red;
 `;
 
 export const UserContainer = styled.div`
@@ -23,17 +23,24 @@ export const UserImageContainer = styled.div`
   img {
     width: 100%;
     border-radius: 0.3rem;
-    border: 2px solid #333;
+    border: 1px solid #333;
+    cursor: pointer;
   }
 
   img:hover {
-    border: 4px solid rgb(29, 161, 242);
+    border: 2px solid rgb(29, 161, 242);
   }
   span {
     color: #ffff;
     p {
       width: 100%;
       margin-top: 0.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    img {
+      width: 100px;
     }
   }
 `;
@@ -45,6 +52,12 @@ export const PlansContainer = styled.div`
     font-size: 1.4rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #333;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 40%;
+    margin: 0 auto;
+    // background: blue;
   }
 `;
 
@@ -64,5 +77,6 @@ export const SignoutContainer = styled.div`
     font-size: 1rem;
     font-weight: 700;
     border-radius: 0.2rem;
+    cursor: pointer;
   }
 `;

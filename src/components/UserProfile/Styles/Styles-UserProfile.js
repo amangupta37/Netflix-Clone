@@ -5,6 +5,9 @@ export const Container = styled.div`
   height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr;
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    grid-template-rows: 100px 1fr;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -12,14 +15,17 @@ export const HeaderContainer = styled.div`
 `;
 export const HeaderLogoContainer = styled.div`
   width: 30%;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 200px;
+  }
 `;
 
 export const UserInfoContainer = styled.div`
   width: 90%;
   margin: 0 auto;
-  //   background: orange;
   text-align: left;
 
   h1 {

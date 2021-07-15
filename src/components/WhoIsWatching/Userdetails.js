@@ -7,7 +7,6 @@ import {
   SignoutContainer,
 } from "./Styles/Style-UserDetails";
 
-// import UserProfile from "./Styles/UserProfile/user.png";
 import Plan from "../Plans/Plan";
 import { auth } from "../../lib/firebase.prod";
 import { useHistory } from "react-router-dom";
@@ -31,7 +30,6 @@ const Userdetails = (props) => {
       <UserContainer>
         <UserImageContainer>
           <img src={userInfo.image} alt="userprofile" onClick={moveToBrowse} />
-
           <span>
             <p>{userInfo.name}</p>
           </span>

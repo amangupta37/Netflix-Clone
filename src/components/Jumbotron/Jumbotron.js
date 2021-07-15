@@ -27,7 +27,7 @@ const Jumbotron = () => {
                 <h1>{jumboValue.title}</h1>
                 <p>{jumboValue.subTitle}</p>
               </Jumbotextsection>
-              <Jumboimagesection image={image}>
+              <Jumboimagesection>
                 {jumboValue.id === 2 ? null : (
                   <img
                     data={jumboValue.direction}

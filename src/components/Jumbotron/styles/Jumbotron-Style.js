@@ -138,12 +138,12 @@ export const DownloadSection = styled.div`
   width: 100%;
   display: grid;
   grid-template-rows: 200px 1fr;
-  @media only screen and (min-width: 800px) {
-    width: 80%;
-    grid-template-rows: 200px 1fr;
+  // background: red;
+  @media only screen and (min-width: 800px) and (max-width: 1150px) {
+    width: 95%;
   }
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-    width: 80%;
+    width: 90%;
     grid-template-rows: 350px 1fr;
   }
 `;
@@ -158,7 +158,7 @@ export const ImageSection = styled.div`
   }
 
   @media only screen and (min-width: 800px) {
-    grid-template-rows: 200px 1fr;
+    background: yellow;
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
@@ -188,7 +188,7 @@ export const Jumbonotify = styled.div`
 
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
     width: 300px;
-    height: 100px;
+    height: 90px;
     bottom: 8rem;
     border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 0.8rem;
@@ -204,7 +204,7 @@ export const Jumbonotifycontent = styled.div`
   padding: 0.6rem;
   display: flex;
   gap: 1rem;
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 800px) and (max-width: 1100px) {
     padding: 0.3rem;
     padding-left: 0.5rem;
   }
@@ -225,8 +225,8 @@ export const Imageboxshot = styled.div`
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-    width: 90px;
-    height: 5rem;
+    width: 70px;
+    height: 4rem;
     img {
       width: 100%;
       height: 100%;
