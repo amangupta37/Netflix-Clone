@@ -7,7 +7,6 @@ const Signin = ({ setuserAuth }) => {
     JSON.parse(localStorage.getItem("pageRedirect"))
   );
   setuserAuth(userIn);
-
   return (
     <>
       {userIn ? (

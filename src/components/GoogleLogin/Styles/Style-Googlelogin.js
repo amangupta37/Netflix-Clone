@@ -21,4 +21,11 @@ export const IconContainer = styled.div`
   span:hover {
     text-decoration: underline;
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    span {
+      padding-top: 1rem;
+      font-size: 1rem;
+    }
+  }
 `;

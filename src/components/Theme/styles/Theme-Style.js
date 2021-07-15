@@ -11,7 +11,15 @@ export const Container = styled.div`
     background: #000 url(${Bgimg});
     background-position: center;
     background-size: cover;
+
     box-shadow: -2px 90px 27px -27px rgba(0, 0, 0, 1) inset;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    grid-template-rows: 100vh 1fr;
+    background: rgba(0, 0, 0, 0.9) url(${Bgimg});
+    background-position: center;
+    background-size: cover;
   }
 `;
 export const EffectContainer = styled.div`
@@ -33,7 +41,12 @@ export const PlaceLogo = styled.div`
   width: 25%;
   height: 50px;
   margin: 1rem;
-  // background: blue;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 10%;
+    height: 50px;
+    margin: 1rem;
+  }
 `;
 
 export const FooterContainer = styled.div`

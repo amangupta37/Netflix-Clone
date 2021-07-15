@@ -1,5 +1,13 @@
 import styled from "styled-components";
-
+export const WraperContainer = styled.div`
+  width: 100%;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+`;
 export const Container = styled.div`
   width: 100%;
   height: 200px;
@@ -15,6 +23,15 @@ export const Container = styled.div`
     color: #ffff;
     font-size: 2rem;
     font-weight: 700;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 35%;
+    margin: 0 auto;
+    height: 75vh;
+    top: 15%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
   }
 `;
 
@@ -66,6 +83,11 @@ export const FormContainer = styled.div`
       color: #0071eb;
     }
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    padding: 2rem;
+    margin-top: 0rem;
+  }
 `;
 export const HelpContainer = styled.div`
   width: 100%;
@@ -75,8 +97,14 @@ export const HelpContainer = styled.div`
   color: rgb(179, 179, 179);
   p {
     color: rgb(179, 179, 179);
+    display: grid;
+    grid-template-rows: 20px 1fr;
   }
 `;
+export const HoldhelpContainer = styled.div`
+  margin-top: 1rem;
+`;
+
 export const CheckboxContainer = styled.div`
   width: 65%;
   display: flex;
