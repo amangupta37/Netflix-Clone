@@ -29,7 +29,7 @@ export const Container = styled.div`
     width: 35%;
     margin: 0 auto;
     height: 75vh;
-    top: 15%;
+    top: 10%;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 0.5rem;
   }
