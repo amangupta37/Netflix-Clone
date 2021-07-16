@@ -1,5 +1,13 @@
 import styled from "styled-components";
-
+export const WraperContainer = styled.div`
+  width: 100%;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+`;
 export const Container = styled.div`
   width: 100%;
   height: 200px;
@@ -15,6 +23,15 @@ export const Container = styled.div`
     color: #ffff;
     font-size: 2rem;
     font-weight: 700;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 35%;
+    margin: 0 auto;
+    height: 75vh;
+    top: 10%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
   }
 `;
 
