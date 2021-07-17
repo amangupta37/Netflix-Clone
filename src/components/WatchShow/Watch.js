@@ -28,7 +28,7 @@ const Watch = (props) => {
           <h2>{props.posterDetails}</h2>
         </TitleContainer>
         <CrossContainer>
-          <ClearIcon onClick={ClosePopup} />
+          <ClearIcon id="close" onClick={ClosePopup} />
         </CrossContainer>
       </VideoContainer>
       <VideoBgContainer>
