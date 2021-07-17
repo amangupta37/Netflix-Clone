@@ -18,4 +18,10 @@ export const Container = styled.div`
 export const VideoShowCase = styled.div`
   width: 100%;
   height: 230px;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 70%;
+    margin: 0 auto;
+    height: 450px;
+  }
 `;
