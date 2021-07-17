@@ -8,12 +8,18 @@ export const Container = styled.div`
   z-index: 10000;
   display: ${(prop) =>
     prop.toogleBackground || prop.initialPosition === 0 ? "block" : "none"};
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    height: 70px;
+  }
 `;
 export const NavContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   background: ${(prop) => (prop.toogleBackground ? "rgb(0, 0, 0)" : null)};
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    padding: 0.7rem;
+  }
 `;
 export const LogoContainer = styled.div`
   width: 130px;
@@ -45,8 +51,8 @@ export const SearchBarContainer = styled.div`
   #search {
     transform: scale(1.3);
     fill: #ffffff;
-
     margin-top: 0.3rem;
+    cursor: pointer;
   }
 
   input {
@@ -57,5 +63,9 @@ export const SearchBarContainer = styled.div`
     border-radius: 0.2rem;
     padding-left: 0.5rem;
     color: #ffffffff;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 25%;
   }
 `;
