@@ -8,4 +8,12 @@ export const NetflixOriginalContainer = styled.div`
     width: 170px;
     height: 100%;
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    cursor: pointer;
+
+    :hover {
+      transform: scale(1.1);
+    }
+  }
 `;

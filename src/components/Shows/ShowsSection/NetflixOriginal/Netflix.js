@@ -56,6 +56,7 @@ const Netflix = ({ searchInput }) => {
               >
                 {val.poster_path !== null ? (
                   <img
+                    id="netflix-poster"
                     src={`https://image.tmdb.org/t/p/original/${val.poster_path}`}
                     alt="nn"
                   />
