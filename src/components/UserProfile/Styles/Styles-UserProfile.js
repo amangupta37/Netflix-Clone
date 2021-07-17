@@ -15,22 +15,39 @@ export const HeaderContainer = styled.div`
 `;
 export const HeaderLogoContainer = styled.div`
   width: 30%;
-  padding-left: 2rem;
-  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
 
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
     width: 200px;
+    padding-left: 2rem;
+    padding-top: 2rem;
   }
 `;
 
 export const UserInfoContainer = styled.div`
   width: 90%;
   margin: 0 auto;
-  text-align: left;
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+
     color: #ffff;
     font-weight: 700;
+  }
+  #title {
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    h1 {
+      font-size: 2rem;
+      color: #ffff;
+      font-weight: 700;
+    }
+
+    #title {
+      text-align: center;
+    }
   }
 `;

@@ -21,7 +21,7 @@ const User = (props) => {
         </HeaderLogoContainer>
       </HeaderContainer>
       <UserInfoContainer>
-        <h1>Who's Watching ?</h1>
+        <h1 id="title">Who's Watching ?</h1>
         <Userdetails logout={props.isSignin} />
       </UserInfoContainer>
     </Container>
