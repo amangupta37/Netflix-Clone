@@ -49,9 +49,21 @@ export const ButtonContainer = styled.div`
     text-align: center;
   }
   z-index: 0;
-
+  cursor: pointer;
+  @media only screen and (min-width: 500px) {
+    width: 150px;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    width: 180px;
+    :hover {
+      cursor: pointer;
+    }
+  }
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-    width: 15%;
+    width: 180px;
     :hover {
       cursor: pointer;
     }
@@ -71,9 +83,24 @@ export const BgContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-
-  @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  @media only screen and (min-width: 500px) {
     width: 100%;
-    height: 400px;
+    height: 280px;
+  }
+  @media only screen and (min-width: 800px) {
+    width: 100%;
+    height: 380px;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 100%;
+    height: 480px;
+  }
+  @media only screen and (min-width: 1440px) {
+    width: 100%;
+    height: 580px;
+  }
+  @media only screen and (min-width: 1640px) {
+    width: 100%;
+    height: 680px;
   }
 `;
