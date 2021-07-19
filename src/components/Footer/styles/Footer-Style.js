@@ -23,12 +23,12 @@ export const FooterQnASection = styled.div`
   }
 
   @media only screen and (min-width: 800px) {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 2rem;
 
     p {
-      font-size: 8px;
+      font-size: 0.9rem;
       width: 100%;
     }
   }
@@ -67,17 +67,32 @@ export const FooterInfoSection = styled.div`
     text-decoration: underline;
   }
 
-  @media only screen and (min-width: 800px) {
-    width: 60%;
+  @media only screen and (min-width: 500px) {
+    width: 80%;
     margin: 0 auto;
     margin-top: 1.3rem;
 
-    grid-template-columns: 130px 130px 130px 130px;
+    grid-template-columns: repeat(3, 1fr);
     text-align: left;
     grid-gap: 1rem;
 
     p {
-      font-size: 8px;
+      font-size: 0.9rem;
+      font-weight: 200;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    grid-gap: 1rem;
+
+    p {
+      font-size: 0.9rem;
       font-weight: 200;
     }
   }
@@ -115,30 +130,34 @@ export const FooterChooseLanguageSection = styled.div`
   }
 
   @media only screen and (min-width: 800px) {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 1.3rem;
     height: 4.5rem;
 
     select {
-      width: 70px;
-      height: 30px;
-      font-size: 8px;
-      padding: 0;
-      padding-left: 0.5rem;
+      width: 120px;
+      height: 50px;
+      background: #000;
+      color: rgb(117, 117, 117);
+      padding: 0.7rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0.2rem;
     }
 
     option {
-      font-size: 10px;
+      font-size: 1rem;
     }
 
     p {
       margin-top: 0.8rem;
-      font-size: 8px;
+      font-size: 1rem;
     }
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+    width: 60%;
     select {
       width: 120px;
       height: 50px;
