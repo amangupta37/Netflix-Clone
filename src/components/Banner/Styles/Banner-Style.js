@@ -8,7 +8,7 @@ export const Container = styled.div`
   background-size: cover;
   box-shadow: 0px -40px 33px 0px rgba(0, 0, 0, 0.9) inset;
   @media only screen and (min-width: 800px) {
-    height: 85vh;
+    height: 75vh;
   }
   @media only screen and (min-width: 1200px) {
     height: 85vh;
