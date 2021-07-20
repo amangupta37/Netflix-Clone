@@ -138,7 +138,6 @@ export const DownloadSection = styled.div`
   width: 100%;
   display: grid;
   grid-template-rows: 200px 1fr;
-  // background: red;
   @media only screen and (min-width: 800px) and (max-width: 1150px) {
     width: 95%;
   }
@@ -158,11 +157,13 @@ export const ImageSection = styled.div`
   }
 
   @media only screen and (min-width: 800px) {
-    background: yellow;
+    width: 50%;
   }
-
+  @media only screen and (min-width: 1000px) {
+    width: 45%;
+  }
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-    width: 55%;
+    width: 45%;
   }
 `;
 
